@@ -1,9 +1,11 @@
-# rhine
+# Rhine
 Is a microservice that implementing hexagonal architecture to handle transaction history creation and retrieval. 
 
 [![Go](https://github.com/pauluswi/rhine/actions/workflows/build.yml/badge.svg)](https://github.com/pauluswi/rhine/actions/workflows/build.yml)
 
 ## Architecture
+
+![General Architecture](./General.JPG)
 
 ## Tech Stack
 
@@ -12,6 +14,12 @@ Is a microservice that implementing hexagonal architecture to handle transaction
 4. Postgres for data persistance
 5. Go Ozzo for HTTP endpoint router
 6. Docker to implement containerization
+
+## Activity Diagram
+
+![Save](./Rhine-Save.JPG)
+
+![Get](./Rhine-Get.JPG)
 
 ## Project Layout
 
