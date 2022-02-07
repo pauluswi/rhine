@@ -1,7 +1,7 @@
 # rhine
 Is a microservice that implementing hexagonal architecture to handle transaction history creation and retrieval. 
 
-
+[![Go](https://github.com/pauluswi/rhine/actions/workflows/build.yml/badge.svg)](https://github.com/pauluswi/rhine/actions/workflows/build.yml)
 
 ## Architecture
 
@@ -72,8 +72,8 @@ It provides the following endpoints:
 
 * `GET /healthcheck`: a healthcheck service provided for health checking purpose (needed when implementing a server cluster)
 * `POST /v1/login`: authenticates a user and generates a JWT
-* `POST /v1/save`: xxxx
-* `GET /v1/get/:id`: xxx
+* `POST /v1/save`: store a transaction history into Kafka and then Postgres
+* `GET /v1/get/:id`: retrieve a transaction history from Redis or Postgres
 
 Try the URL `http://localhost:8080/healthcheck` in a browser, and you should see something like `"OK v1.0.0"` displayed.
 
@@ -90,10 +90,10 @@ curl -X POST -H "Content-Type: application/json" -d '{"username": "demo", "passw
 curl -X GET -H "Authorization: Bearer ...JWT token here..." http://localhost:8080/v1/xxx
 # end example 
 
-# with the above JWT token, hit a endpoint to generate a payment token
+# with the above JWT token, hit a endpoint to save a transaction history
 curl -X POST -H "Content-Type: application/json" -d '{"customer_id": "08110001"}' -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDE0NjQ2OTksImlkIjoiMTAwIiwibmFtZSI6ImRlbW8ifQ.WYS5mX_UGUWu4nf_u-FHBpkLKKSf2YL3xwdBzqooYbU" http://localhost:8080/v1/save
 
-# with the above JWT token, hit a endpoint to get all payment token for a specific customer
+# with the above JWT token, hit a endpoint to get a transaction history by passing ID parameter
 curl -X GET -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDE0NjQ2OTksImlkIjoiMTAwIiwibmFtZSI6ImRlbW8ifQ.WYS5mX_UGUWu4nf_u-FHBpkLKKSf2YL3xwdBzqooYbU" http://localhost:8080/v1/get/1
 
 ```
