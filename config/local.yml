@@ -1,7 +1,0 @@
-dsn: "postgres://127.0.0.1/go_restful?sslmode=disable&user=postgres&password=postgres"
-jwt_signing_key: "LxsKJywDL5O5PvgODZhBH12KE6k2yL8E"
-kafka_url: "localhost:9092"
-kafka_timeout: 10  
-kafka_topic: "trxhistory"  
-redis_url: "redis://:@localhost:6379/0"
-redis_expired: 1000
