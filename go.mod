@@ -7,9 +7,14 @@ require github.com/stretchr/testify v1.7.0
 require (
 	github.com/go-playground/locales v0.14.0 // indirect
 	github.com/go-playground/universal-translator v0.18.0 // indirect
+	github.com/go-redis/redis v6.15.9+incompatible // indirect
 	github.com/golang-jwt/jwt v3.2.2+incompatible // indirect
 	github.com/golang/gddo v0.0.0-20190904175337-72a348e765d2 // indirect
+	github.com/golang/snappy v0.0.1 // indirect
+	github.com/klauspost/compress v1.9.8 // indirect
 	github.com/leodido/go-urn v1.2.1 // indirect
+	github.com/pierrec/lz4 v2.6.0+incompatible // indirect
+	github.com/segmentio/kafka-go v0.4.27 // indirect
 	go.uber.org/atomic v1.7.0 // indirect
 	go.uber.org/multierr v1.6.0 // indirect
 	golang.org/x/crypto v0.0.0-20220131195533-30dcbda58838 // indirect
