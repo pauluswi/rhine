@@ -178,6 +178,9 @@ command,
 Go RESTful API (Boilerplate)
 https://github.com/qiangxue/go-rest-api
 
+Hexagonal-Architecture by Alistair Cockburn 
+https://alistair.cockburn.us/hexagonal-architecture/
+
 
 
 
