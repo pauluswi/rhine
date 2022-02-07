@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS trx_history;
+DROP EXTENSION IF EXISTS "uuid-ossp";

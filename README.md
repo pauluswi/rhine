@@ -1,8 +1,7 @@
 # rhine
 Is a microservice that implementing hexagonal architecture to handle transaction history creation and retrieval. 
 
-[![codecov](https://codecov.io/gh/pauluswi/rhine/branch/master/graph/badge.svg)](https://codecov.io/gh/pauluswi/rhine)
-![gopherbadger-tag-do-not-edit]()
+
 
 ## Architecture
 
