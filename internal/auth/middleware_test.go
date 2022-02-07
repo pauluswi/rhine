@@ -5,7 +5,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/dgrijalva/jwt-go"
+	//"github.com/dgrijalva/jwt-go"
+	"github.com/golang-jwt/jwt"
 	"github.com/pauluswi/rhine/internal/test"
 	"github.com/stretchr/testify/assert"
 )

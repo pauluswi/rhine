@@ -1,4 +1,4 @@
-module pauluswi/rhine
+module github.com/pauluswi/rhine
 
 go 1.17
 
@@ -21,10 +21,13 @@ require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/go-ozzo/ozzo-dbx v1.5.0
 	github.com/go-ozzo/ozzo-routing/v2 v2.4.0
+	github.com/go-ozzo/ozzo-validation/v4 v4.3.0
 	github.com/go-playground/validator/v10 v10.10.0
 	github.com/google/uuid v1.3.0
 	github.com/lib/pq v1.10.4
 	github.com/pmezard/go-difflib v1.0.0 // indirect
+	github.com/qiangxue/go-env v1.0.1
 	go.uber.org/zap v1.20.0
+	gopkg.in/yaml.v2 v2.4.0
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
 )
