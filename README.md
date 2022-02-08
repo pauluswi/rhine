@@ -101,6 +101,9 @@ curl -X GET -H "Authorization: Bearer ...JWT token here..." http://localhost:808
 # with the above JWT token, hit a endpoint to save a transaction history
 curl -X POST -H "Content-Type: application/json" -d '{"customer_id": "08110001"}' -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDE0NjQ2OTksImlkIjoiMTAwIiwibmFtZSI6ImRlbW8ifQ.WYS5mX_UGUWu4nf_u-FHBpkLKKSf2YL3xwdBzqooYbU" http://localhost:8080/v1/save
 
+# with the above JWT token, hit a endpoint to save a transaction history
+curl -X POST -H "Content-Type: application/json" -d '{"id": 2, 	"trx_id": "222222", "customer_id": "08110001", "cd":"c", 	"status":"0", "amount":20001}' -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDE0NjQ2OTksImlkIjoiMTAwIiwibmFtZSI6ImRlbW8ifQ.WYS5mX_UGUWu4nf_u-FHBpkLKKSf2YL3xwdBzqooYbU" http://localhost:8080/v1/save
+
 # with the above JWT token, hit a endpoint to get a transaction history by passing ID parameter
 curl -X GET -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDE0NjQ2OTksImlkIjoiMTAwIiwibmFtZSI6ImRlbW8ifQ.WYS5mX_UGUWu4nf_u-FHBpkLKKSf2YL3xwdBzqooYbU" http://localhost:8080/v1/get/1
 
